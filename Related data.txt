@@ -1,0 +1,3 @@
+For answer 1: inc.js, dec.js, fin.js,index.html
+
+For answer 2: about.js, app.js, contact.js,home.js,navbar.js, product.js, ind.html

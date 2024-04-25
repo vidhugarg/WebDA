@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>React App in HTML</title>
+</head>
+<body>
+  <div id="root"></div>
+
+  <!-- React and ReactDOM from CDN -->
+  <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  
+  <!-- React Router from CDN -->
+  <script src="https://unpkg.com/react-router-dom/umd/react-router-dom.min.js"></script>
+
+  <script type="text/babel">
+    // Home component
+    const Home = () => {
+      return (
+        <div>
+          <h2>Home Page</h2>
+          <p>Welcome to our website!</p>
+        </div>
+      );
+    }
+
+    // About component
+    const About = () => {
+      return (
+        <div>
+          <h2>About Page</h2>
+          <p>Learn more about us.</p>
+        </div>
+      );
+    }
+
+    // Product component
+    const Product = () => {
+      return (
+        <div>
+          <h2>Product Page</h2>
+          <p>Check out our amazing products.</p>
+        </div>
+      );
+    }
+
+    // Contact component
+    const Contact = () => {
+      return (
+        <div>
+          <h2>Contact Page</h2>
+          <p>Get in touch with us.</p>
+        </div>
+      );
+    }
+
+    // Navbar component
+    const Navbar = () => {
+      return (
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/product">Product</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </nav>
+      );
+    }
+
+    // App component
+    const App = () => {
+      return (
+        <Router>
+          <div>
+            <Navbar />
+            <Switch>
+              <Route path="/" exact component={Home} />
+              <Route path="/about
